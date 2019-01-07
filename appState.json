@@ -1,0 +1,105 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "dd6b6e74-dc60-440f-9f7a-124428232fab": {
+        "id": "dd6b6e74-dc60-440f-9f7a-124428232fab",
+        "parent": null,
+        "name": "test",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "e3f07d6a-02f2-4237-9f57-3a95e1232bcf"
+        ],
+        "isRemovable": false,
+        "filePath": "test"
+      },
+      "e3f07d6a-02f2-4237-9f57-3a95e1232bcf": {
+        "id": "e3f07d6a-02f2-4237-9f57-3a95e1232bcf",
+        "parent": "dd6b6e74-dc60-440f-9f7a-124428232fab",
+        "name": "lambda.js",
+        "type": "LAMBDA_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "test/lambda.js",
+        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "triggers": [
+          {
+            "resourceName": "apigusEast1testLahirutestany",
+            "config": {}
+          }
+        ],
+        "config": {
+          "runtime": "nodejs8.10",
+          "timeout": 60,
+          "memory": 128
+        },
+        "testCases": {
+          "b4b8f245-7081-4a7d-ae74-059ca29d700f": {
+            "id": "b4b8f245-7081-4a7d-ae74-059ca29d700f",
+            "name": "Unnamed event",
+            "functionId": "e3f07d6a-02f2-4237-9f57-3a95e1232bcf",
+            "event": "{\n    \"key1\": \"value1\",\n    \"key2\": \"value2\",\n    \"key3\": \"value3\"\n}"
+          }
+        }
+      }
+    },
+    "deletedFiles": [],
+    "rootNode": "dd6b6e74-dc60-440f-9f7a-124428232fab",
+    "openFiles": [
+      "e3f07d6a-02f2-4237-9f57-3a95e1232bcf"
+    ],
+    "currentFileId": "e3f07d6a-02f2-4237-9f57-3a95e1232bcf",
+    "resources": {
+      "apigusEast1testLahirutestany": {
+        "name": "apigusEast1testLahirutestany",
+        "type": "API_GATEWAY",
+        "config": {
+          "selectedRegion": "us-east-1",
+          "apiMode": 0,
+          "apiName": "testLahiru",
+          "endpointType": "EDGE",
+          "resourceMode": 0,
+          "resourceName": "test",
+          "resourcePath": "/test",
+          "restMethod": "ANY",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 0,
+          "stageName": "test"
+        },
+        "globallyEditable": false
+      }
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {}
+    },
+    "lambdaId": "e3f07d6a-02f2-4237-9f57-3a95e1232bcf"
+  },
+  "PROJECT_META": {
+    "projectName": "test",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "lastSave": 1546852338494,
+    "platform": "AWS",
+    "platformRegions": {}
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "test",
+      "url": "https://github.com/TestAndunR/test-sigma-1546852364107"
+    }
+  }
+}
